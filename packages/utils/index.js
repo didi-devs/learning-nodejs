@@ -2,8 +2,8 @@ var a, b;
 
 function validateNumber(a, b) {
     try{
-        if  (!isNaN(a) && !isNaN(b) && b != 0) {
-            console.log("x is a number");
+        if  (Number.isNaN(a) && Number.isNaN(b) && b != 0) {
+            console.log("Input is valid");
         } else {
             console.log("Invalid number Provided");
         }
