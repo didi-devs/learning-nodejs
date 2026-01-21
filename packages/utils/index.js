@@ -1,14 +1,16 @@
-var a, b;
-
-function validateNumber(a, b) {
+function validateNumber(a, b) {    
     try{
-        if  (Number.isNaN(a) && Number.isNaN(b) && b != 0) {
-            console.log("Input is valid");
+        const num1 = Number(a);
+        const num2 = Number(b);
+        if  (!Number.isNaN(num1) && !Number.isNaN(num2)) {
+            return [num1, num2];
         } else {
-            console.log("Invalid number Provided");
+
+            throw new Error("Invalid number Provided");        
         }
     } catch (err) {
         console.log("Error validating number:", err);
+        throw err;
     }
 }
 
