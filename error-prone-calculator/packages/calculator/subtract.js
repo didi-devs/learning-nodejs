@@ -2,8 +2,8 @@ import { validateNumber } from "../utils/index.js";
 
 
 var subtract = function(a, b) {
-    validateNumber(process.argv[2]);
-    return a - b;
+    const [num1, num2] = validateNumber(a, b);
+    return num1 - num2;
 }
 
 export { subtract };

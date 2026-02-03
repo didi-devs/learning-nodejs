@@ -8,7 +8,7 @@ const [, , operation, a, b] = process.argv;
 try {
   switch (operation) {
     case "add":
-      console.log(a + b);
+      console.log(add(a, b));
       break;
 
     case "subtract":
