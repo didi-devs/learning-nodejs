@@ -1,4 +1,5 @@
-function validateNumber(a, b) {    
+function validateNumber() {  
+      const[, , a, b] = process.argv;  
     try{
         const num1 = Number(a);
         const num2 = Number(b);
